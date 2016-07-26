@@ -1,0 +1,277 @@
+/* NAVBAR STYLES --------------- */
+#topbar {
+  margin: 0;
+  min-height: 70px;
+  height: 70px;
+  text-align: right;
+}
+#search-holder {
+  margin: 0;
+  padding: 0;
+}
+.search-form {
+  padding: 0;
+  float: left;
+  margin-bottom: 0;
+  margin-top: 20px;
+  .btn {
+    border: 1px solid white;
+    font-size: 18px;
+    margin: 0;
+    padding-left: 7px;
+    padding-top: 4px;
+    padding-right: 5px;
+    height: 30px;
+    overflow: hidden;
+    color: rgba(51,51,51,0.6) !important;
+    &:hover {
+      background: #fff;
+      color: rgba(51,51,51,1) !important;
+    }
+    &:focus{
+      outline: none;
+      border: 1px solid white;
+      background: #fff;
+    }
+  }
+  #searchbox {
+    box-shadow: none;
+    color: rgba(51,51,51,0.6) !important;
+    height: 30px;
+    border: 1px solid white;
+    font-size: 16px;
+    padding-left: 0;
+    width: 175px;
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+
+#main-navbar {
+  background: #fff;
+  border: none;
+  box-shadow: 1px 1px 25px 13px rgba(0,0,0, 0.25);
+  height: 60px; 
+  margin-left: -15px;
+  margin-right: -15px;
+  @media (min-width: $screen-md-min) {
+    box-shadow: 1px 11px 14px 5px rgba(0,0,0, 0.25);
+    height: 80px; 
+    margin-left: 0;
+    margin-right: 0;
+    }
+  ul.navbar-nav {
+    margin-left: 0;
+    margin-top:0;
+    @media (min-width: $screen-lg-min) {
+      margin-left: 80px;
+    }
+    &>li {
+      margin-right: 10px;
+      min-height: 80px;
+      font-size: 22px;
+      @media (min-width: $screen-md-min) {
+        font-size: 16px;
+       }
+      @media (min-width: $screen-lg-min) {
+        margin-right: 40px;
+        font-size: 22px;
+      }
+      &:hover {
+        background: rgba(51,51,51, 1.0);
+        color: #fff;
+        box-shadow: none;
+        @media (min-width: $screen-lg-min) {
+        box-shadow: 1px 1px 20px 5px rgba(0,0,0, 0.25);
+        }
+      }
+      &>a:link, &>a:visited {
+        height: 80px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        -webkit-transition: 0s;
+          -moz-transition: 0s;
+            -ms-transition: 0s;
+              -o-transition: 0s;
+                transition: 0s;
+      }
+      &>a:hover /*, a:active, a:focus */ {
+        background: rgba(51,51,51, 1.0);
+        color: #fff;
+      }
+      &>a.active:link, &>a.active:visited {
+        color: rgba(227, 0, 28, 1.00);
+      }
+    }
+  } 
+  .navbar-toggle {
+    border: none;
+    position: relative;
+    border-radius: 0;
+    margin: 0;
+    float:none;
+    font-size: 24px;
+    height: 60px;
+    width: calc(100% - 216px); // Width of the toggle button is 100%-Fissler logo width and shooping cart button width
+    &:after {
+      font-family: 'FontAwesome';
+      content: "\f0d7";
+      font-size: 16px;
+      margin-left: 7px;
+      color: rgba(51, 51, 51, 1);
+    }
+    &:hover {
+      background: #fff;
+    }
+  } 
+} 
+#navbar-main-collapse {
+  padding-right: 0;
+  }
+.extra-text {
+  font-size: 16px;
+  margin-right: 0px;
+  li a {
+    padding: 25px 45px 0 0;
+  }
+}
+
+.navbar-collapse {
+  background: #fff;
+  }
+.navbar-collapse.collapse.in {
+  background: #fff;
+  border: none;
+  & > ul > li{
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    @media (min-width: $screen-md-min) {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 0;
+    }
+    a:link {
+      padding-left: 15px ;
+      @media (min-width: $screen-sm-min) {
+        padding-left: 30px ;
+      }
+    }
+  }
+}
+.social-links {
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-right: 40px;
+  li {
+    margin: 0;
+  }
+  li a:link, li a:visited {
+    padding-top: 22px;
+    padding-right: 5px;
+    padding-bottom: 0 ;
+  }
+  li a:hover {
+  }
+}
+.navbar-brand {
+  padding: 0;
+  height: 60px;
+  @media (min-width: $screen-md-min) {
+    height: 80px; 
+    }
+  img {
+    height: 100%;
+  }
+}
+#signin {
+  background: rgba(51,51,51,0.6);
+  color: rgba(255,255,255,0.6);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 3px 35px;
+  margin-top: 20px;
+  &:hover {
+  background: rgba(51,51,51,0.8);
+  }
+}
+.dropdown-toggle {
+  color: #fff;
+  a:link, a:visited {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:after {
+    font-family: 'FontAwesome';
+    content: "\f0d7";
+    font-size: 16px;
+    margin-left: 10px;
+    //color: rgba(51, 51, 51, 1);
+  }
+  &:hover:after {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+}
+.dropdown-menu {
+  padding-top: 15px;
+  margin: 0 !important;
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  @media (min-width: $screen-lg-min) {
+    padding-top: 20px;
+  }
+  &>li {
+    min-height: 40px;
+    height: 40px;
+    margin: 0 !important;
+    padding: 0;
+    @media (min-width: $screen-lg-min) {
+      min-height: 50px;
+      height: 50px;
+    }
+  }
+  a:link, a:visited {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    height: 40px !important;
+    @media (min-width: $screen-md-min) {
+      font-size: 16px;
+    }
+    @media (min-width: $screen-lg-min) {
+      font-size: 24px;
+      height: 50px;
+    }
+  }
+  a:hover, a:active, a:focus {
+    background: rgba(51,51,51,1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+  }
+}
+ @media (min-width: $screen-md-min) {
+    /* Make Navigation Toggle on Desktop Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+} 
+
+#shopping-cart {
+  background: rgba(102, 102, 102, 1.00);
+  display: block;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  top:0;
+  margin: 0px;
+  color: #fff !important;
+  padding: 12px 17px !important;
+  font-size: 26px !important;
+  &:hover {
+    background: rgba(80, 80, 80, 1.00);
+  }
+  @media (min-width: $screen-md-min) {
+    height: 80px;
+    width: 80px;
+    padding: 17px 22px !important;
+    font-size: 36px !important;
+    }
+}

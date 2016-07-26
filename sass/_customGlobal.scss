@@ -1,0 +1,18 @@
+/* GLOBAL STYLES --------------- */
+body {
+  background: rgba(230, 230, 230, 1);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:cover;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Karla', sans-serif;
+}
+a, button {
+  -webkit-transition: .25s;
+    -moz-transition: .25s;
+      -ms-transition: .25s;
+        -o-transition: .25s;
+          transition: .25s;
+  }
